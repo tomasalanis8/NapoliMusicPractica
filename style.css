@@ -1,35 +1,14 @@
-h1{
-    color: aliceblue;
-    display: flex; 
-    justify-content: center;
-}
-
 header{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-.napo_logo{
-    width: 50px;
-    height: 30px;
+
+ul{
+  color: black;
 }
 
-nav {
-    background-color: rgb(231, 231, 231);
-    text-align: center;
-    padding: 5px;
-    margin: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: inline; 
-}
-
-nav li {
-    display: inline;
-    margin-right: 100px; 
+h1{
+    color: aliceblue;
 }
 
 .imagen{
@@ -61,3 +40,69 @@ nav li {
 footer{
     background: rgb(233, 233, 233);
 }
+
+nav{
+  display: flex;
+  justify-self: right;
+}
+
+nav ul li {
+    position: relative;
+  }
+  
+  nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul li:hover .submenu {
+    display: block;
+  }
+  
+
+  body {
+    background: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+  }
+
+#napo_logo {
+    margin: 10px;
+    width: 100px;
+    height: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul li:hover .submenu {
+    display: block;
+  }
+  
