@@ -1,63 +1,142 @@
+header{
+  display: flex;
+  align-items: center;
+  background-color: #5827bb
+}
+
+#igLogo{
+  width: 12px;
+  color: white;
+}
+
+#contendorIzq{
+  width: 600px;
+}
+
+#napoLogo {
+  margin: 10px 20px 10px 20px;
+  width: 100px;
+  height: auto;
+  justify-self: left;
+}
+
+#ladoIzq{
+  background-image: url("imagenes/Napoli\ Halloween\ -\ Fondo.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+}
+
+#imgLadoIzq{
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  width: 500px;
+}
+
 h1{
     color: aliceblue;
-    display: flex; 
-    justify-content: center;
+    justify-self: left;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.napo_logo{
-    width: 50px;
-    height: 30px;
+nav{
+  margin-left: auto;
+  margin-right: 50px;
 }
 
-nav {
-    background-color: rgb(231, 231, 231);
-    text-align: center;
-    padding: 5px;
-    margin: 10px 0;
+nav ul li {
+  position: relative;  
+  display: inline-block;
+  margin-right: 10px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: inline; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-    display: inline;
-    margin-right: 100px; 
+ul{
+  color: black;
 }
 
-.imagen{
-    border: 5px rgb(13, 109, 109);
-    border-radius: 1%;
-    border-style: solid;
-    width: 300px;
-    height: 500px;
-    margin: 10px;
+.cartelera{
+  flex: wrap;
+  border: 5px rgb(13, 109, 109);
+  border-radius: 1%;
+  border-style: solid;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
 }
 
-.imagen:hover{
-    transition: scale 1s, transform 0.5s, border 0.5s, border-radius 0.5s;
-    scale: 110%;
-    border: 5px rgb(27, 253, 253);
-    border-radius: 1%;
-    border-style: solid;
+.cartelera:hover{
+  transition: scale 1s, transform 0.5s, bord  er 0.5s, border-radius 0.5s;
+  scale: 110%;
+  border: 5px rgb(27, 253, 253);
+  border-radius: 1%;
+  border-style: solid;
 }
 
-.container{
-    background-color: rgb(32, 32, 32);
-    border: 5px rgb(252, 252, 252);
-    border-style: solid;
-    border-radius: 1%;
-    display: flex;
-    justify-content: center;
+.caja{
+  background-color: rgb(32, 32, 32);
+  border: 5px rgb(252, 252, 252);
+  border-style: solid;
+  border-radius: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cartelera {
+    max-width: 100%; /* Las imágenes ocuparán el 100% del ancho de la pantalla */
+    height: auto; /* La altura se ajustará automáticamente */
+  }
 }
 
 footer{
     background: rgb(233, 233, 233);
+}
+
+body {
+  background: rgb(15, 15, 15);
+  margin: 0;
+  padding: 0;
+}  
+
+@font-face {
+  font-family: 'PPRadioGrotesk-Black';
+  src: url('fuentes/PPRadioGrotesk-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPRadioGrotesk-BlackItalic';
+  src: url('fuentes/PPRadioGrotesk-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPRadioGrotesk-Regular';
+  src: url('fuentes/PPRadioGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPRadioGrotesk-RegularItalic';
+  src: url('fuentes/PPRadioGrotesk-RegularItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+
+}@font-face {
+  font-family: 'PPRadioGrotesk-UltralightItalic';
+  src: url('fuentes/PPRadioGrotesk-UltralightItalic.otf') format('opentype');
 }
