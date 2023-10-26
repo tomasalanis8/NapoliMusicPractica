@@ -4,6 +4,16 @@ header{
   background-color: #5827bb 
 }
 
+h1{
+  color: aliceblue;
+  justify-self: left;
+}
+
+nav{
+margin-left: auto; /*alineamiento a la izquierda*/
+margin-right: 50px;
+}
+
 #igLogo{
   width: 12px;
 }
@@ -44,14 +54,28 @@ header{
   scale: 70%; /*cambiar segun se disponga*/
 }
 
-h1{
-    color: aliceblue;
-    justify-self: left;
+#textoDer{
+  display: flex;
+  align-self: center;
+  color: white;
+  font-family: 'PPRadioGrotesk-Black', sans-serif;
 }
 
-nav{
-  margin-left: auto; /*alineamiento a la izquierda*/
-  margin-right: 50px;
+#proximoEvento {
+  display: flex;
+  width: 100%;
+}
+
+#contenedorIzq, #contenedorDer {
+  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#contenedorDer{
+  display: flex; /* Agregamos display: flex */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .cartelera{ /* no cambiar*/
