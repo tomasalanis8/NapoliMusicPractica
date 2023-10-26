@@ -25,16 +25,29 @@ header{
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  width: 600px;
+  width: 700px;
   height: 600px;
 }
 
-#imgLadoIzq{
+#halloween{
+  display: flex;
   position: absolute;
-  bottom: 0;
-  left: 22%;
-  transform: translateX(-50%); /* Centra horizontalmente */
   width: 500px;
+  bottom: 0;
+  left: 7rem;
+}
+
+#napoPresenta{
+  display:flex;
+  align-self: center;
+  position:absolute;
+  scale: 45%;
+  top: 0;
+}
+
+#cattaneo{
+  position:sticky;
+  scale: 70%;
 }
 
 h1{
