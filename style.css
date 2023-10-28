@@ -1,108 +1,126 @@
 header{
-    display: flex;
-    align-items: center;
-}
-
-ul{
-  color: black;
+  display: flex;
+  align-items: center;
+  background-color: #5827bb 
 }
 
 h1{
-    color: aliceblue;
+  color: aliceblue;
+  justify-self: left;
 }
 
-.imagen{
-    border: 5px rgb(13, 109, 109);
-    border-radius: 1%;
-    border-style: solid;
-    width: 300px;
-    height: 500px;
-    margin: 10px;
+nav{
+margin-left: auto; /*alineamiento a la izquierda*/
+margin-right: 50px;
 }
 
-.imagen:hover{
-    transition: scale 1s, transform 0.5s, border 0.5s, border-radius 0.5s;
-    scale: 110%;
-    border: 5px rgb(27, 253, 253);
-    border-radius: 1%;
-    border-style: solid;
+#igLogo{
+  width: 12px;
+}
+#napoLogo {
+  margin: 10px 20px 10px 20px;
+  width: 100px;
+  height: auto;
+  justify-self: left;
 }
 
-.container{
-    background-color: rgb(32, 32, 32);
-    border: 5px rgb(252, 252, 252);
-    border-style: solid;
-    border-radius: 1%;
-    display: flex;
-    justify-content: center;
+#flyer{
+  width: 100%;
+}
+
+#proximoEvento{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30.5em,1fr));
+}
+
+#contenedorDer{
+  font-family: "PPRadioGrotesk-Regular, sans-serif";
+  color: white;
+}
+
+.cartelera{ /* no cambiar*/
+  flex: wrap;
+  border: 5px rgb(13, 109, 109);
+  border-radius: 1%;
+  border-style: solid;
+  width: 300px;
+  height: 500px;
+  margin: 10px; 
+}
+
+.cartelera:hover{ 
+  transition: scale 1s, border 0.5s, border 0.5s; /*para hacerlo fluido*/
+  scale: 110%;
+  border: 5px rgb(27, 253, 253);
+  border-style: solid;
+}
+
+#textoEventosPasados{
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  font-family: 'PPRadioGrotesk-Black';
+
+}
+
+.caja{ /* no cambiar*/
+  background-color: rgb(32, 32, 32);
+  border: 5px whitesmoke;
+  border-style: solid;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+@media (max-width: 768px) { /* responsive*/
+  .cartelera {
+    max-width: 100%; /* Las imágenes ocuparán el 100% del ancho de la pantalla */
+    height: auto; /* La altura se ajustará automáticamente */
+  }
 }
 
 footer{
     background: rgb(233, 233, 233);
 }
 
-nav{
-  display: flex;
-  justify-self: right;
+body {
+  background: rgb(15, 15, 15);
+  margin: 0;
+  padding: 0;
+}  
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Black';
+  src: url('fuentes/PPRadioGrotesk-Black.otf') format('opentype');
 }
 
-nav ul li {
-    position: relative;
-  }
-  
-  nav ul li .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul li:hover .submenu {
-    display: block;
-  }
-  
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-BlackItalic';
+  src: url('fuentes/PPRadioGrotesk-BlackItalic.otf') format('opentype');
+}
 
-  body {
-    background: rgb(15, 15, 15);
-    margin: 0;
-    padding: 0;
-  }
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Regular';
+  src: url('fuentes/PPRadioGrotesk-Regular.otf') format('opentype');
+}
 
-#napo_logo {
-    margin: 10px;
-    width: 100px;
-    height: auto;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul li:hover .submenu {
-    display: block;
-  }
-  
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-RegularItalic';
+  src: url('fuentes/PPRadioGrotesk-RegularItalic.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+
+}@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-UltralightItalic';
+  src: url('fuentes/PPRadioGrotesk-UltralightItalic.otf') format('opentype');
+}
