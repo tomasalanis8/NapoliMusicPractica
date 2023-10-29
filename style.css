@@ -24,58 +24,18 @@ margin-right: 50px;
   justify-self: left;
 }
 
-#ladoIzq{
-  background-image: url("imagenes/Napoli\ Halloween\ -\ Fondo.jpg"); /*el fondo del flyer actual*/
-  background-size: cover;
-  background-position: bottom; /*que arranque desde abajo, cambiar segun el flyer se disponga*/
-  background-repeat: no-repeat;
-  width: 700px; /*no cambiar sin proporcionar*/
-  height: 600px; /*no cambiar sin proporcionar*/
-}
-
-#halloween{
-  display: flex;
-  position: absolute;
-  width: 500px; /*unico editable segun el titulo disponga*/
-  bottom: 0;
-  left: 7rem; /*nunca cambiar NADA EXCEPTO widht */
-}
-
-#napoPresenta{
-  display:flex;
-  align-self: center;
-  position:absolute;
-  scale: 45%;
-  top: 0; /*no cambiar NADA */
-}
-
-#cattaneo{
-  position:sticky;
-  scale: 70%; /*cambiar segun se disponga*/
-}
-
-#textoDer{
-  display: flex;
-  align-self: center;
-  color: white;
-  font-family: 'PPRadioGrotesk-Black', sans-serif;
-}
-
-#proximoEvento {
-  display: flex;
+#flyer{
   width: 100%;
 }
 
-#contenedorIzq, #contenedorDer {
-  flex: 1;
-  width: 50%;
-  box-sizing: border-box;
+#proximoEvento{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30.5em,1fr));
 }
 
 #contenedorDer{
-  display: flex; /* Agregamos display: flex */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  font-family: "PPRadioGrotesk-Regular, sans-serif";
+  color: white;
 }
 
 .cartelera{ /* no cambiar*/
@@ -95,13 +55,23 @@ margin-right: 50px;
   border-style: solid;
 }
 
+#textoEventosPasados{
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  font-family: 'PPRadioGrotesk-Black';
+
+}
+
 .caja{ /* no cambiar*/
   background-color: rgb(32, 32, 32);
-  border: 5px rgb(252, 252, 252);
+  border: 5px whitesmoke;
   border-style: solid;
   border-radius: 1%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;  
 }
 
 @media (max-width: 768px) { /* responsive*/
