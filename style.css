@@ -52,7 +52,7 @@ margin-right: 50px;
 
 .cartelera:hover{ 
   transition: scale 1s, border 0.5s, border 0.5s; /*para hacerlo fluido*/
-  scale: 110%;
+  scale: 101%;
   border: 5px rgb(27, 253, 253);
   border-style: solid;
 }
