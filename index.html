@@ -9,10 +9,11 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <script src="script.js"></script> <!--js--> 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> <!--bootstrap--> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> <!--bootstrap-->
-<script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> <!--bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> <!--bootstrap-->
     <script src="assets/js/material.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SweetAlert-->
 </head>
 
 <body style="background: rgb(15, 15, 15);">
@@ -40,18 +41,20 @@
         <img src="imagenes/Napoli Halloween - Recortado.jpg" id="flyer">
     </div>
     <div id="contenedorDer" class="col-md-5">
+
+      <div id="contenedorFormDer">
       <form method="post" name="contact-form" action="https://script.google.com/macros/s/AKfycbylJ4rI7o8uH4NaPXZ0UOJ_bqNWDeQXMmKmHXEk9CApESXLrsNqGl1h6sMsrdyqVv63kw/exec">
         
         <div class="formRow">
 
         <div>
           <label for="nombre">Nombre:</label><br>
-          <input type="text" placeholder="Nombre" id="nombre" name="nombre" required><br><br>
+          <input type="text" placeholder="Nombre" id="nombre" name="nombre" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" required><br><br>
         </div>
 
         <div>
           <label for="apellido">Apellido:</label><br>
-          <input type="text" placeholder="Apellido" id="apellido" name="apellido" required><br><br>
+          <input type="text" placeholder="Apellido" id="apellido" name="apellido" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" required><br><br>
         </div>
       </div>
 
@@ -59,10 +62,12 @@
         <input type="email" placeholder="Email" id="email" name="email" required><br><br>
         
         <label for="telefono">Teléfono:</label><br>
-        <input type="tel" maxlength="10" placeholder="Telefono (Sin 15, Sin +54, Sin 0)" id="telefono" name="telefono" ><br><br>
+        <input type="tel" maxlength="10" placeholder="Telefono (Sin 15, Sin +54, Sin 0)" id="telefono" name="telefono" required pattern="[0-9]+" required><br><br>
         
         <input type="submit" value="Enviar" id="submit">
-    </form>
+      </form>
+    </div>
+
     </div>
   </div>
   

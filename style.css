@@ -54,6 +54,8 @@ input[type=submit]:hover{
   display: flex;
 }
 
+
+
 input[type=email], input[type=tel]{
   width: 51.5%;
 }
