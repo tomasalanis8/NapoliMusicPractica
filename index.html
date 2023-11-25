@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="imagenes/Napoli Music SIN FONDO.png" title="dj iconos">
   <title>Napoli Music</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="script.js"></script> <!--js--> 
+  <link href="styleCompu.css" rel="stylesheet" type="text/css">
+  <!--<link href="styleTelefono.css" rel="stylesheet" type="text/css"> <!--js-->
+  <script src="script.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> <!--bootstrap--> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> <!--bootstrap-->
   <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
@@ -28,8 +29,8 @@
         </ul>
       </li>
       <li>
-        <img src="imagenes/ig icono.png" id="igLogo">
-        <a href="https://www.instagram.com/napoli.music" style= "text-decoration: none; color: inherit"  target="_blank">INSTAGRAM</a>
+        <img src="imagenes/usuario.png" id="iconUsuario">
+        <a href="#" style= "text-decoration: none; color: inherit" onclick=mostrarModal()>INICIAR SESIÓN</a>
       </li>
     </div>
     </ul>
@@ -43,6 +44,34 @@
     <div id="contenedorDer" class="col-md-5">
 
       <div id="contenedorFormDer">
+      
+    </div>
+
+    </div>
+  </div>
+  
+  
+
+<!--EVENTOS PASADOS-->
+  <div>
+    <div class="caja" style="margin-bottom: 10px;"> <!--resaltador-->
+      <div id="textoEventosPasados" class="container-fluid">
+        <h2>EVENTOS PASADOS</h2>
+      </div>
+      <div id="eventosPasados"> <!--Corregir responsive y agregarlos con JS-->
+      <a href="https://www.instagram.com/p/Ct-KP6mLZqw/" target="_blank"><img class="cartelera" src="imagenes/Story - napoli 22 de julio.png"> </a> 
+      <a href="https://www.instagram.com/p/CwQ7hW5LP--/" target="_blank"><img class="cartelera" src="imagenes/WhatsApp Image 2023-09-12 at 16.55.38.jpeg"> </a> 
+    </div>
+    </div>
+  </div>
+
+
+
+<!--MODAL-->
+<div id="myModal" class="modal">
+    <!-- Contenido del modal -->
+    <div class="modal-content" onclick="event.stopPropagation();">
+      <span class="close" onclick="cerrarModal()">&times;</span>
       <form method="post" name="contact-form" action="https://script.google.com/macros/s/AKfycbylJ4rI7o8uH4NaPXZ0UOJ_bqNWDeQXMmKmHXEk9CApESXLrsNqGl1h6sMsrdyqVv63kw/exec">
         
         <div class="formRow">
@@ -66,28 +95,11 @@
         
         <input type="submit" value="Enviar" id="submit">
       </form>
-    </div>
-
-    </div>
-  </div>
-  
-  
-
-
-  <div>
-    <div class="caja" style="margin-bottom: 10px;"> <!--resaltador-->
-      <div id="textoEventosPasados" class="container-fluid">
-        <h2>EVENTOS PASADOS</h2>
-      </div>
-      <div id="eventosPasados">
-      <a href="https://www.instagram.com/p/Ct-KP6mLZqw/" target="_blank"><img class="cartelera" src="imagenes/Story - napoli 22 de julio.png"> </a> <!--eventos pasados-->
-      <a href="https://www.instagram.com/p/CwQ7hW5LP--/" target="_blank"><img class="cartelera" src="imagenes/WhatsApp Image 2023-09-12 at 16.55.38.jpeg"> </a> <!--eventos pasados-->
-    </div>
-    </div>
-  </div>
-
+</div>
+</div>
 </body>
 
+<!--FOOTER-->
 <footer style="padding: 1px 0;">
   <div style="margin: 10px;">
   <p>Esta pagina fue creada con fines educativos.</p>
@@ -95,5 +107,4 @@
   <p><a href="https://www.instagram.com/tomasalanis8" target="_blank">Contacto</a></p>
   </div>
 </footer>
-
 </html>

@@ -49,3 +49,33 @@ document.addEventListener("DOMContentLoaded", function() {
         })
       })
 })
+
+function mostrarModal() {
+  document.getElementById('myModal').style.display = 'block';
+
+  // Agregar eventos de escucha
+  document.addEventListener('click', cerrarModalDesdeFuera);
+  document.addEventListener('keydown', cerrarModalConTeclaEsc);
+}
+
+function cerrarModal() {
+  document.getElementById('myModal').style.display = 'none';
+
+  // Remover eventos de escucha
+  document.removeEventListener('click', cerrarModalDesdeFuera);
+  document.removeEventListener('keydown', cerrarModalConTeclaEsc);
+}
+
+function cerrarModalDesdeFuera(event) {
+  // Cerrar modal si se hace clic fuera del modal
+  if (event.target === document.getElementById('myModal')) {
+    cerrarModal();
+  }
+}
+
+function cerrarModalConTeclaEsc(event) {
+  // Cerrar modal si se presiona la tecla "Escape"
+  if (event.key === 'Escape') {
+    cerrarModal();
+  }
+}
