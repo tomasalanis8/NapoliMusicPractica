@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Black';
+  src: url('fuentes/PPRadioGrotesk-Black.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-BlackItalic';
+  src: url('fuentes/PPRadioGrotesk-BlackItalic.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Regular';
+  src: url('fuentes/PPRadioGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-RegularItalic';
+  src: url('fuentes/PPRadioGrotesk-RegularItalic.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+}
+
+@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-Ultralight';
+  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+
+}@font-face { /*FUENTES NO TOCAR */
+  font-family: 'PPRadioGrotesk-UltralightItalic';
+  src: url('fuentes/PPRadioGrotesk-UltralightItalic.otf') format('opentype');
+}

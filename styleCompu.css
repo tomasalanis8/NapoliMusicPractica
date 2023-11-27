@@ -97,9 +97,6 @@ input[type=email], input[type=tel]{
   width: 99%;
 }
 
-
-
-
 footer{
     background: rgb(233, 233, 233);
 }
@@ -110,7 +107,6 @@ body {
   padding: 0;
 }  
 
-/* Estilos para el modal */
 .modal {
   display: none;
   position: fixed;
@@ -121,17 +117,10 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center; /* Añadido para centrar verticalmente */
+  align-items: center; /* Añadido para centrar horizontalmente */
+  display: flex; /* Añadido para centrar */
 }
-
-/* Estilos para el contenido del modal */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
 /* Estilos para el botón de cerrar */
 .close {
   color: #aaa;
@@ -139,7 +128,6 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
@@ -147,36 +135,168 @@ body {
   cursor: pointer;
 }
 
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-Black';
-  src: url('fuentes/PPRadioGrotesk-Black.otf') format('opentype');
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  margin: auto; /* Añadido para centrar */
 }
-
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-BlackItalic';
-  src: url('fuentes/PPRadioGrotesk-BlackItalic.otf') format('opentype');
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
 }
-
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-Regular';
-  src: url('fuentes/PPRadioGrotesk-Regular.otf') format('opentype');
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
-
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-RegularItalic';
-  src: url('fuentes/PPRadioGrotesk-RegularItalic.otf') format('opentype');
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
 }
-
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-Ultralight';
-  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
 }
-
-@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-Ultralight';
-  src: url('fuentes/PPRadioGrotesk-Ultralight.otf') format('opentype');
-
-}@font-face { /*FUENTES NO TOCAR */
-  font-family: 'PPRadioGrotesk-UltralightItalic';
-  src: url('fuentes/PPRadioGrotesk-UltralightItalic.otf') format('opentype');
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #89099c, #c642fa);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #664755;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #999;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #89099c, #c642fa, #89099c, #c642fa);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }
