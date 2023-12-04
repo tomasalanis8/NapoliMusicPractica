@@ -1,11 +1,15 @@
 html{
   scroll-behavior:smooth;
 }
-header{
+
+header {
   display: flex;
   align-items: center;
-  background-color: #5827bb 
+  width: 100%;
+  background: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
 }
+
+
 
 h1{
   color: aliceblue;
@@ -63,7 +67,7 @@ input[type=email], input[type=tel]{
 
 .cartelera{ /* no cambiar*/
   flex: wrap;
-  border: 5px rgb(13, 109, 109);
+  border: 5px;
   border-radius: 1%;
   border-style: solid;
   width: 300px;
@@ -74,12 +78,13 @@ input[type=email], input[type=tel]{
 .cartelera:hover{ 
   transition: scale 1s, border 0.5s, border 0.5s; /*para hacerlo fluido*/
   scale: 101%;
-  border: 5px rgb(27, 253, 253);
+  border: 5px #6f34e4 ;
   border-style: solid;
 }
 
-#textoEventosPasados{
-  background-color: whitesmoke;
+#textoEventosPasados {
+  color: white;
+  background-image: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
   width: 100%;
   text-align: center;
   font-family: 'PPRadioGrotesk-Black';
@@ -87,9 +92,9 @@ input[type=email], input[type=tel]{
 
 .caja{ /* no cambiar*/
   background-color: rgb(32, 32, 32);
-  border: 5px whitesmoke;
+  border: 5px;
+  border-image: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5)) 1;
   border-style: solid;
-  border-radius: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +194,7 @@ body {
   left: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #89099c, #c642fa);
+  background: -webkit-linear-gradient(left,   rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 input[type="radio"]{
@@ -280,7 +285,7 @@ form .btn .btn-layer{
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right, #89099c, #c642fa, #89099c, #c642fa);
+  background: -webkit-linear-gradient(right,  rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
   border-radius: 5px;
   transition: all 0.4s ease;;
 }
