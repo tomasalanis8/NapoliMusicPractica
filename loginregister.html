@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagenes/Napoli Music SIN FONDO.png" title="dj iconos">
+  <title>Napoli Music</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="fuentes.css" rel="stylesheet" type="text/css">
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="assets/js/material.min.js"></script>
+  <link href="stylelogin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background: rgb(15, 15, 15);">
+    <header class="container-fluid"> <!--bootstrap-->
+      <img id="napoLogo" src="imagenes/Napoli Music SIN FONDO.png"> 
+      <h1 style="font-family: 'PPRadioGrotesk-Black', sans-serif; text-shadow: 2px 5px 2px #000;"><a href="index.html" style= " text-decoration:none; color:inherit">NAPOLI MUSIC</a></h1>
+    <nav style="color:whitesmoke"> <!--nav de la izquierda-->
+      <ul style="list-style: none; padding: 0; color:whitesmoke; font-family: 'PPRadioGrotesk-Regular', sans-serif;">
+        <li>
+          <a href="index.html" style= "text-decoration: none; color: inherit"><img src="imagenes/casa.png" color:white id="iconUsuario">
+          PAGINA PRINCIPAL</a>
+        </li>
+      </div>
+      </ul>
+    </nav>
+    </header>  
+
+
+    
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="scriptlogin.js"></script>
+    
+  
+  <!--FOOTER-->
+  <footer style="padding: 1px 0;">
+    <div style="margin: 10px;">
+    <p>Esta pagina fue creada con fines educativos.</p>
+    <hr>
+    <p><a href="https://www.instagram.com/tomasalanis8" target="_blank">Contacto</a></p>
+    </div>
+  </footer>
+  </html>

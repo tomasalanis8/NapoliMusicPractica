@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="imagenes/Napoli Music SIN FONDO.png" title="dj iconos">
   <title>Napoli Music</title>
-  <link href="styleCompu.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <link href="fuentes.css" rel="stylesheet" type="text/css">
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> <!--Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="assets/js/material.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 
@@ -21,28 +18,24 @@
     <img id="napoLogo" src="imagenes/Napoli Music SIN FONDO.png"> 
     <h1 style="font-family: 'PPRadioGrotesk-Black', sans-serif; text-shadow: 2px 5px 2px #000;" >NAPOLI MUSIC</h1>
   <nav style="color:whitesmoke"> <!--nav de la izquierda-->
-    <ul style="list-style: none; padding: 0; color:whitesmoke; font-family: 'PPRadioGrotesk-Regular', sans-serif;">
+    <!-- <ul style="list-style: none; padding: 0; color:whitesmoke; font-family: 'PPRadioGrotesk-Regular', sans-serif;">
       <li>
-        <!--se puede agregar algo a futuro-->
-        <ul class="submenu" style="list-style: none; padding: 0;">
-        </ul>
-      </li>
-      <li>
-        <a href="#" style= "text-decoration: none; color: inherit" onclick=mostrarModal()><img src="imagenes/usuario.png" id="iconUsuario">
+        <a href="loginregister.html" style= "text-decoration: none; color: inherit"><img src="imagenes/usuario.png" id="iconUsuario">
         INICIAR SESIÓN</a>
-      </li>
-    </div>
-    </ul>
+      </li> 
+    </ul> -->
   </nav>
   </header>  
   <div id="proximoEvento">
     <div id="contenedorIzq">
-        <img src="imagenes/Napoli Halloween - Recortado.jpg" id="flyer">
+        <a href="https://www.instagram.com/p/C3Q-WGVLP8-/?img_index=1" target="_blank"><img src="imagenes/grees.jpeg" id="flyer"></a>
     </div>
     <div id="contenedorDer" class="col-md-5">
 
       <div id="textoContenedorDer">
-      PROXIMO EVENTO
+      <h2> CONSIGUE TU ENTRADA </h2>
+
+      <a href="https://mpago.la/1bjqf9s" class="custom-button">Comprar con MercadoPago</a>
     </div>
 
     </div>
@@ -57,73 +50,14 @@
         <h2>EVENTOS PASADOS</h2>
       </div>
       <div id="eventosPasados"> <!--Corregir responsive y agregarlos con JS-->
-      <a href="https://www.instagram.com/p/Ct-KP6mLZqw/" target="_blank"><img class="cartelera" src="imagenes/Story - napoli 22 de julio.png"> </a> 
-      <a href="https://www.instagram.com/p/CwQ7hW5LP--/" target="_blank"><img class="cartelera" src="imagenes/WhatsApp Image 2023-09-12 at 16.55.38.jpeg"> </a> 
+      <a href="https://www.instagram.com/p/Ct-KP6mLZqw/" target="_blank"><img class="cartelera" src="imagenes/Story - napoli 22 de julio.png"></a> 
+      <a href="https://www.instagram.com/p/CwQ7hW5LP--/" target="_blank"><img class="cartelera" src="imagenes/WhatsApp Image 2023-09-12 at 16.55.38.jpeg"></a> 
+      <a href="https://www.instagram.com/p/C1AxSPzLHw8/" target="_blank"><img class="cartelera" src="imagenes/Franbux.jpg"></a> 
     </div>
     </div>
   </div>
 
 
-
-<!--MODAL-->
-<div id="myModal" class="modal" style="font-family: poppins;">
-    <!-- Contenido del modal -->
-    <div class="wrapper" onclick="event.stopPropagation();">
-    <span class="close" onclick="cerrarModal()">&times;</span>
-      <div class="title-text">
-        <div class="title login">Iniciar Sesión</div>
-        <div class="title signup">Registrarse</div>
-      </div>
-      <div class="form-container">
-        <div class="slide-controls">
-          <input type="radio" name="slide" id="login" checked>
-          <input type="radio" name="slide" id="signup">
-          <label for="login" class="slide login">Iniciar Sesión</label>
-          <label for="signup" class="slide signup">Registrarse</label>
-          <div class="slider-tab"></div>
-        </div>
-        <div class="form-inner">
-          <form action="#" class="login">
-            <div class="field">
-              <input type="text" placeholder="Email" required>
-            </div>
-            <div class="field">
-              <input type="password" placeholder="Contraseña" required>
-            </div>
-            <div class="pass-link"><a href="#">¿Olvidaste tu contraseña?</a></div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Iniciar Sesión">
-            </div>
-            <div class="signup-link">¿No eres miembro? <a href="#">Regístrate ahora</a></div>
-          </form>
-          <form action="#" class="signup">
-            <div class="field">
-              <input type="text" placeholder="Email" required>
-            </div>
-            <div class="field">
-              <input type="password" placeholder="Contraseña" required>
-            </div>
-            <div class="field">
-              <input type="password" placeholder="Confirmar Contraseña" required>
-            </div>
-            <div class="field btn">
-              <div class="btn-layer"></div>
-              <input type="submit" value="Registrarse">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-</div>
-
-<script>
-  function openModal() {
-    var modal = document.getElementById('myModal');
-    modal.style.display = 'block';
-  }
-</script>
-</body>
 
 <!--FOOTER-->
 <footer style="padding: 1px 0;">

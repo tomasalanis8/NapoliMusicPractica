@@ -1,0 +1,117 @@
+html{
+  scroll-behavior:smooth;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
+}
+
+h1{
+  color: aliceblue;
+  justify-self: left;
+}
+
+nav{
+margin-left: auto; /*alineamiento a la izquierda*/
+margin-right: 50px;
+}
+
+#iconUsuario{
+  width: 12px;
+  color: white;
+}
+#napoLogo {
+  margin: 10px 20px 10px 20px;
+  width: 100px;
+  height: auto;
+  justify-self: left;
+}
+
+#flyer{
+  height: 100%;
+  width: 100%;
+}
+
+#proximoEvento{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30.5em,1fr));
+  width: 100%;
+}
+
+#contenedorDer{
+  font-family: "PPRadioGrotesk-Regular, sans-serif";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cartelera{ /* no cambiar*/
+  flex: wrap;
+  border: 5px  #885be2;
+  border-radius: 1%;
+  border-style: solid;
+  width: 300px;
+  height: 500px;
+  margin: 10px; 
+}
+
+.cartelera:hover{ 
+  transition: scale 1s, border 0.5s, border 0.5s; /*para hacerlo fluido*/
+  scale: 101%;
+  border: 5px #6f34e4 ;
+  border-style: solid;
+}
+
+#textoEventosPasados {
+  color: white;
+  background-image: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5));
+  width: 100%;
+  text-align: center;
+  font-family: 'PPRadioGrotesk-Black';
+}
+
+.caja{ /* no cambiar*/
+  background-color: rgb(32, 32, 32);
+  border: 5px;
+  border-image: linear-gradient(to right, rgba(60, 19, 141, 0.5), rgba(133, 3, 184, 0.5)) 1;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 99%;
+}
+
+footer{
+    background: rgb(233, 233, 233);
+}
+
+body {
+  background: rgb(15, 15, 15);
+  margin: 0;
+  padding: 0;
+}  
+
+.custom-button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #007bff, #6cbee6);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.custom-button:hover{
+  transition: scale 1s, border 0.5s, border 0.5s;
+  scale: 110%;
+}
+
